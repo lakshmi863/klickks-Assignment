@@ -12,7 +12,7 @@ const Dashboard = () => {
     useEffect(() => {
         const checkAuth = async () => {
             try {
-                const res = await axios.get('http://localhost:5000/api/auth/dashboard');
+                const res = await axios.get('https://klickks-assignment-d2cu.onrender.com/api/auth/dashboard');
                 if (res.data.loggedIn) {
                     setUserEmail(res.data.email);
                 } else {
@@ -31,7 +31,7 @@ const Dashboard = () => {
 
     const handleLogout = async () => {
         try {
-            await axios.post('http://localhost:5000/api/auth/logout');
+            await axios.post('https://klickks-assignment-d2cu.onrender.com/api/auth/logout');
             navigate('/login');
         } catch (err) {
             console.error('Logout failed:', err);

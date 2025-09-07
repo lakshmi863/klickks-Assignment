@@ -15,7 +15,7 @@ const Register = () => {
         setSuccess('');
 
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/register', { email, password });
+            const response = await axios.post('https://klickks-assignment-d2cu.onrender.com/api/auth/register', { email, password });
             setSuccess(response.data.message + ". Redirecting to login...");
             
             setTimeout(() => navigate('/login'), 2000);

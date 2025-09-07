@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
     // --- Function to handle LOGIN ---
     const login = async (email, password) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+            const response = await axios.post('https://klickks-assignment-d2cu.onrender.com/api/auth/login', { email, password });
             if (response.data && response.data.user) {
                 setCurrentUser(response.data.user); // Set the logged-in user
                 navigate('/'); // Redirect to HOME page
@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
 
         // Step 2: In the background, send the request to the server to destroy the session
         try {
-            await axios.post('http://localhost:5000/api/auth/logout');
+            await axios.post('https://klickks-assignment-d2cu.onrender.com/api/auth/logout');
             // No action needed on success, UI is already updated
         } catch (error) {
             // Log the error for developers, but the user experience is already handled
@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }) => {
         const checkLoggedIn = async () => {
             try {
                 // Check if the user has an active session cookie
-                const response = await axios.get('http://localhost:5000/api/auth/dashboard');
+                const response = await axios.get('https://klickks-assignment-d2cu.onrender.com/api/auth/dashboard');
                 if (response.data && response.data.loggedIn) {
                     setCurrentUser({ email: response.data.email }); // Set user from session
                 }

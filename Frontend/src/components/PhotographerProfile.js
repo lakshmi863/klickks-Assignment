@@ -12,7 +12,7 @@ const PhotographerProfile = () => {
     useEffect(() => {
         const fetchProfile = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/photographers/${id}`);
+                const res = await axios.get(`https://klickks-assignment-d2cu.onrender.com/api/photographers/${id}`);
                 setProfile(res.data);
             } catch (error) {
                 console.error("Failed to fetch profile", error);

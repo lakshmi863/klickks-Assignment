@@ -21,7 +21,7 @@ const PhotographerRegister = () => {
         setError('');
         setSuccess('');
         try {
-            const response = await axios.post('http://localhost:5000/api/photographers/register', formData);
+            const response = await axios.post('https://klickks-assignment-d2cu.onrender.com/api/photographers/register', formData);
             setSuccess(response.data.message + " You can now login.");
             setTimeout(() => navigate('/photographers'), 2000); // Redirect to the list after success
         } catch (err) {

@@ -11,7 +11,7 @@ const PhotographersPage = () => {
     useEffect(() => {
         const fetchPhotographers = async () => {
             try {
-                const res = await axios.get('http://localhost:5000/api/photographers');
+                const res = await axios.get('https://klickks-assignment-d2cu.onrender.com/api/photographers');
                 setPhotographers(res.data);
             } catch (error) {
                 console.error("Failed to fetch photographers", error);
