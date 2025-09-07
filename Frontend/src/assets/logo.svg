@@ -1,0 +1,23 @@
+<svg width="250" height="50" viewBox="0 0 250 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    Logo designed for Klickks Photography.
+    Features a minimalist aperture icon and an elegant, modern font pairing.
+  -->
+  <g fill="none" fill-rule="evenodd">
+    <!-- Aperture Icon -->
+    <g transform="translate(5, 5)" fill="#4A5568">
+      <path d="M20,3.35 L29.32,8.67 L29.32,19.33 L20,24.65 L10.68,19.33 L10.68,8.67 L20,3.35 M20,0 L9,6 L9,22 L20,28 L31,22 L31,6 L20,0 Z"></path>
+      <path d="M20,9.1 C14.99,9.1 10.9,13.2 10.9,18.2 C10.9,23.21 14.99,27.3 20,27.3 C25.01,27.3 29.1,23.21 29.1,18.2 C29.1,13.2 25.01,9.1 20,9.1 M20,11.5 C23.69,11.5 26.7,14.51 26.7,18.2 C26.7,21.89 23.69,24.9 20,24.9 C16.31,24.9 13.3,21.89 13.3,18.2 C13.3,14.51 16.31,11.5 20,11.5 Z"></path>
+    </g>
+    
+    <!-- "Klickks" - Elegant Cursive Font -->
+    <text font-family="'Dancing Script', cursive" font-size="32" font-weight="700" fill="#2D3748" x="50" y="34">
+      Klickks
+    </text>
+    
+    <!-- "Photography" - Clean Sans-serif Sub-heading -->
+    <text font-family="'Poppins', sans-serif" font-size="12" font-weight="400" fill="#718096" x="165" y="31">
+      Photography
+    </text>
+  </g>
+</svg>
